@@ -1,0 +1,12 @@
+<!--Start Nathan's Table to Div Code-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+$('table').replaceWith( $('table').html()
+   .replace(/<tbody/gi, "<div class='orig-table'")
+   .replace(/<tr/gi, "<div")
+   .replace(/<\/tr>/gi, "</div>")
+   .replace(/<td/gi, "<span")
+   .replace(/<\/td>/gi, "</span>")
+   .replace(/<\/tbody/gi, "<\/div")
+);
+</script>
